@@ -1,0 +1,224 @@
+
+.viewMore {
+  color:#AC8A46;
+}
+
+
+.productText {
+  // font: normal normal 300 16px/24px SF Pro Text;
+  margin-bottom: 52px;
+}
+
+
+
+.products {
+  padding: 60px 0;
+  color: black;
+}
+
+.productMaintenance {
+  img {
+    height: 680px;
+  }
+  ul {
+    //padding: 92px 0;
+    padding-top: 8px;
+    padding-bottom: 40px;
+
+    li > p {
+      margin-top: 4px;
+    }
+  }
+
+  a {
+    display: block;
+    margin-top: 10px;
+    color: black;
+    border: 2px solid black;      
+    font: normal normal bold 20px/30px SF Pro Text;
+  }
+
+  a:hover {
+    color: white;
+  }
+}
+
+.product {
+  display: flex;
+  flex-direction: row-reverse;
+  &:nth-child(2n) {
+    flex-direction: row;
+  }
+
+  .productImage {
+    height: 350px;
+    // width: 555px;    
+    background-position: center;
+    object-fit: cover;
+  }
+}
+
+.productRecommendation {
+  padding: 40px 0;
+  background: #E0E0E0;
+  .productRecommendationImage {
+    object-fit: cover;
+    max-width: 100%;
+    // width: 350px;
+    height: 350px;
+    h5 {
+      font: normal normal 300 16px/24px SF Pro Text;
+    }
+  }
+}
+
+.bottleRecycling {
+  margin: 40px 0;
+  h4 {
+    font: normal normal 300 20px/30px SF Pro Text;
+  }
+}
+
+.moreInformation {
+  height: 600px;
+  background: url("../images/index10.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  .text {
+    margin-top: 332px;
+    font: normal normal 600 32px/48px PingFang TC;
+    color: #8D8D8D;
+    margin-bottom: 20px;
+  }
+
+  a {
+    display: block;
+  }
+
+  .emailAddress, .emailSubscribe {
+    //font: normal normal medium 16px/24px SF Pro Text;
+    font: normal normal normal 16px/24px SF Pro Text;
+    border: 2px solid #916000;
+  }
+
+  .emailAddress {
+    color: #8D8D8D;
+    padding-left: 16px;
+    padding-right: 57px;
+  }
+
+  .emailSubscribe {
+    color: white;
+    background: #916000;
+    text-decoration: none; 
+  }
+}
+
+.shoppingCartNumber {
+  color: white;
+  background-color: $primary;
+  position: relative; 
+  top: -10px;
+  right: 10px;
+  width: 1.2rem;
+  height: 1.2rem;
+  text-align: center;
+  font-size: 12px;
+  //  height: 1rem;
+
+  // vertical-align: top;
+  // background-color: $primary;
+  // padding: 0 8px;
+  // font-size: 12px;
+
+  // float: right;
+}
+
+.soldOut {
+  position: relative;
+    // overflow: hidden;
+  background-color: black;
+  // position: relative;
+    // overflow: hidden;
+  //  background-color: black;
+  // background: transparent url("../images/index8.jpg") no-repeat;
+  // background-size: cover;
+  // background-position: center; 
+  // background-color: black;
+  opacity: 0.65;
+  // z-index: 10;
+  p {
+    color: white;
+    font: normal normal 600 24px/36px SF Pro Text;
+
+     position: relative;
+      z-index: 2;
+      width: 100%;
+      text-align: center;
+  }
+
+  &:before {  
+    background-image: url("../images/index8.jpg");
+    content: ' ';
+    // display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    // width: 100%;
+    // height: 100%;
+    z-index: 1;
+    opacity: 0.5;
+    background-repeat: no-repeat;
+    // background-position: 50% 0;
+    background-size: cover;
+    
+  }
+}
+
+@media (min-width: 992px) { 
+  .bannerImage, .bannerImageText {
+    height: 870px;
+  };
+
+  .product {
+    .productImage {
+      height: 555px;
+    }   
+  }
+
+ .productMaintenance {
+    img {
+      height: 1080px;
+    }
+    ul {
+      padding: 92px 0;    
+    }
+  }
+
+  .bottleRecycling {
+    margin: 60px 0;
+  }
+
+  // shopping cart
+  
+  // .productInfo {   
+  //   margin-top: 80px;
+  //   .image1 {
+  //     height: 460px;
+  //   }
+  //   .image2 {
+  //     margin-top: 0;
+  //   }
+  //   .image4 {
+  //     margin-top: 30px;
+  //     margin-bottom: 60px;
+  //   }
+  //   ul {
+  //     margin-top: 80px;
+  //   }
+  // }
+
+}

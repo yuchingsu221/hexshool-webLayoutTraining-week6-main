@@ -1,0 +1,17 @@
+$primary:      #916000 !default;
+$secondary:     #8D8D8D !default;
+
+$border-radius:               .125rem !default; // 2px
+$paragraph-margin-bottom: 0;
+$text-muted:                  #00000062 !default;
+
+$spacer: 1rem;
+$spacers: (
+  6: ($spacer * 2)
+);
+
+@import "bootstrap/bootstrap";
+
+@import "page/common";
+@import "page/index";
+@import "page/product";

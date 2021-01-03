@@ -1,0 +1,91 @@
+// shopping cart 
+.productInfo {
+  margin-top: 50px;
+  .image1, .image2, .image3, .image4 {
+    max-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .image1, .image4 {
+    // max-width: 100%;
+    background-image: url("../images/product1.jpg");    
+  }
+  .image1 {
+    height: 220px;
+  }
+  .image2 {
+    margin-top: 40px;
+    background-image: url("../images/product2.jpg");
+    height: 640px;
+  }
+  .image3 {
+    background-image: url("../images/product3.jpg");
+    height: 640px;
+    // height: 640px;
+    // object-fit: cover;
+    background-position: center;
+  }
+  .image4 {
+    height: 460px;
+  }
+  .image1 {    
+    margin-bottom: 30px;
+  }
+  .image4 {
+     margin-top: 16px;
+     margin-bottom: 40px;
+  }
+
+  .qty, .addShoppingCart {
+    width: 100%;
+    padding: 0;
+    font: normal normal normal 16px/22px PingFang TC;
+  }
+  .qty {
+    border: 1px solid #916000;
+    border-radius: 4px 0px 0px 4px;
+  }
+  .addFavorite {
+    color: $primary;
+  }
+  .productInfoPrice {
+    margin-top: 32px;
+    margin-bottom: 12px;
+    font: normal normal 300 20px/30px SF Pro Text;
+  }
+
+  .productInfoTitle {
+    font: normal normal normal 16px/24px SF Pro Text;
+    font-weight: bold;
+  }
+  .productInfoText {
+    font: normal normal 300 16px/24px PingFang TC;
+  }
+
+  ul {
+    margin-top: 40px;
+  }
+}
+
+
+@media (min-width: 992px) { 
+  // shopping cart
+  
+  .productInfo {   
+    margin-top: 80px;
+    .image1 {
+      height: 460px;
+    }
+    .image2 {
+      margin-top: 0;
+    }
+    .image4 {
+      margin-top: 30px;
+      margin-bottom: 60px;
+    }
+    ul {
+      margin-top: 80px;
+    }
+  }
+
+}
